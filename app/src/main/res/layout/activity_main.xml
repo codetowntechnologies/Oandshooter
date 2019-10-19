@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinator_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.MainActivity">
+
+    <include layout="@layout/content_main" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="300dp">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5000"
+            android:inputType="number"
+            android:visibility="gone"
+            android:id="@+id/et_inputTime"/>
+
+    <Button
+        android:id="@+id/buttonStartProjection"
+        android:layout_width="160sp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/start_projection"/>
+
+    <Button
+        android:id="@+id/buttonStopProjection"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center"
+        android:text="@string/stop_projection" />
+
+
+        <TextView
+            android:id="@+id/showstatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+          />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:visibility="visible"
+            android:layout_marginRight="20sp"
+            app:srcCompat="@drawable/ic_add_white_24dp" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

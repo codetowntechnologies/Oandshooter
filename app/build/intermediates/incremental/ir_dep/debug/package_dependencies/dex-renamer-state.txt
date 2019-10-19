@@ -1,0 +1,4 @@
+#Sat Oct 19 08:15:19 IST 2019
+base.0=C\:\\Users\\hp\\Downloads\\Oandshooter\\Oandshooter\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
+path.0=classes.dex
+renamed.0=classes.dex
